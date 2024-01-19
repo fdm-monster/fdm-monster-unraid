@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FDM Monster</Name>
+  <Repository>fdm-monster</Repository>
+  <Registry>https://hub.docker.com/r/fdmmonster/fdm-monster/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository/</Support>
+  <Project>https://github.com/fdm-monster/fdm-monster</Project>
+  <Overview>3D printer farm management platform for local or in-cloud usage using OctoPrint.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:4000]</WebUI>
+  <TemplateURL>https://github.com/fdm-monster/fdm-monster-unraid/blob/main/fdm-monster.xml</TemplateURL>
+  <Icon>https://github.com/fdm-monster/fdm-monster-client/blob/main/public/img/logo.png</Icon>
+  <Config Name="Server Port" Target="4000" Default="4000" Mode="tcp" Description="Container Port: 4000" Type="Port" Display="always" Required="true" Mask="false"/>
+</Container>
