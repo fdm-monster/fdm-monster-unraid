@@ -1,32 +1,31 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>FDMMonster</Name>
+  <Name>FDM Monster</Name>
   <Repository>fdmmonster/fdm-monster:1.6.1-sqlite</Repository>
   <Registry>https://hub.docker.com/r/fdmmonster/fdm-monster/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/fdmmonster/fdm-monster/</Support>
-  <Project/>
+  <Support>https://github.com/fdm-monster/fdm-monster/issues</Support>
+  <Project>https://github.com/fdm-monster/fdm-monster</Project>
   <Overview>3D printer farm management platform for local or in-cloud usage using OctoPrint.&#xD;
 &#xD;
 Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
 &#xD;
 https://hub.docker.com/r/fdmmonster/fdm-monster/</Overview>
-  <Category/>
+  <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:4000]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/fdm-monster/fdm-monster-unraid/main/fdm-monster.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/fdm-monster/fdm-monster-client/main/public/img/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1709845990</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>The FDM Monster project can be backed through Github Sponsors.</DonateText>
+  <DonateLink>https://github.com/sponsors/fdm-monster</DonateLink>
   <Requires/>
-  <Config Name="Media" Target="/app/media" Default="/mnt/user/fdm-monster/media" Mode="rw" Description="Temporary gcode uploads, UI bundle ZIPs, current UI bundle and logs for FDM Monster. These files are not crucial for FDM Monster to start." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/fdm-monster/media</Config>
-  <Config Name="Experimental TYPEORM" Target="ENABLE_EXPERIMENTAL_TYPEORM" Default="true" Mode="" Description="Keep this enabled in order to ensure FDM Monster will be in SQLite mode. Disabling it will require a local MongoDB container instead, which might cause your FDM Monster to stop working" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
   <Config Name="Web UI" Target="4000" Default="4000" Mode="tcp" Description="Port needed to access WebUI of FDM-Monster" Type="Port" Display="always" Required="true" Mask="false">4000</Config>
+  <Config Name="Media" Target="/app/media" Default="/mnt/user/fdm-monster/media" Mode="rw" Description="Temporary gcode uploads, UI bundle ZIPs, current UI bundle and logs for FDM Monster. These files are not crucial for FDM Monster to start." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/fdm-monster/media</Config>
   <Config Name="Database Path" Target="/app/database" Default="/mnt/user/fdm-monster/database" Mode="rw" Description="The folder in which the SQLite database files will be stored. There will be more than 1 file (usually around 3 with .sqlite and .wal extensions)&#13;&#10;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/fdm-monster/database</Config>
+  <Config Name="Experimental TYPEORM" Target="ENABLE_EXPERIMENTAL_TYPEORM" Default="true" Mode="" Description="Keep this enabled in order to ensure FDM Monster will be in SQLite mode. Disabling it will require a local MongoDB container on the side, which might cause your FDM Monster to stop working." Type="Variable" Display="always" Required="true" Mask="false">true</Config>
 </Container>
