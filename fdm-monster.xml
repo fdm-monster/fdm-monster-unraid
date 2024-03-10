@@ -9,11 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/fdm-monster/fdm-monster/issues</Support>
   <Project>https://github.com/fdm-monster/fdm-monster</Project>
-  <Overview>3D printer farm management platform for local or in-cloud usage using OctoPrint.&#xD;
-&#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
-&#xD;
-https://hub.docker.com/r/fdmmonster/fdm-monster/</Overview>
+  <Overview>3D printer farm management platform for local or in-cloud usage using OctoPrint.</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:4000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/fdm-monster/fdm-monster-unraid/main/fdm-monster.xml</TemplateURL>
