@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>FDM Monster</Name>
-  <Repository>fdmmonster/fdm-monster:1.6.1-sqlite</Repository>
+  <Repository>fdmmonster/fdm-monster:1.6.2-sqlite</Repository>
   <Registry>https://hub.docker.com/r/fdmmonster/fdm-monster/</Registry>
   <Network>bridge</Network>
   <MyIP/>
